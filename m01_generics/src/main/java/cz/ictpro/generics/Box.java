@@ -1,14 +1,14 @@
 package cz.ictpro.generics;
 
-public class Box {
+public class Box<T> {
+    private T item;
 
-    private Object item;
-
-    public Object getItem() {
+    public T getItem() {
         return item;
     }
 
-    public void setItem(Object item) {
+    public void setItem(T item) {
         this.item = item;
     }
 }
+
