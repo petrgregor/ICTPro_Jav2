@@ -1,4 +1,4 @@
-package cz.ictpro.generics;
+package cz.ictpro.generics.lesson;
 
 public class NumberBox<T extends Number> {
 

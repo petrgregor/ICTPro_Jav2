@@ -1,4 +1,4 @@
-package cz.ictpro.generics;
+package cz.ictpro.generics.lesson;
 
 public class PairGenerator {
     public static <K, V> Pair<K, V> generatePair(K key, V value) {
