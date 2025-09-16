@@ -6,3 +6,4 @@ findProject(":m01_generics:src.main.java")?.name = "src.main.java"
 include("m01_generics.src.main.java.cz.ictpro.generics")
 include("m01_generics")
 include("m02_collections")
+include("m03_inner_classes")
