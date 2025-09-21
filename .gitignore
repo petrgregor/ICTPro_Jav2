@@ -38,3 +38,5 @@ bin/
 ### Mac OS ###
 .DS_Store
 /gradle/
+/movies.txt
+/user_output.txt

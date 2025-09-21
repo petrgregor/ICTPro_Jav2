@@ -11,3 +11,6 @@ include("m04_functional_programming")
 include("m04_functional_programming")
 include("m05_streams")
 include("m06_threads")
+include("m07_swing")
+
+include("m08_io")
