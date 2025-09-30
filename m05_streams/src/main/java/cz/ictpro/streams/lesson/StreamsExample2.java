@@ -65,7 +65,7 @@ public class StreamsExample2 {
 
         List.of("who", "will", "be", "first").stream()
                 .sorted()
-                .findFirst() // zwraca Optional
+                .findFirst() // Optional
                 .ifPresent(System.out::println); // will display "be"
 
 
@@ -80,11 +80,12 @@ public class StreamsExample2 {
         System.out.println(sum); // the result is a sum - 49
 
 
-        final List<String> result = Arrays.asList("Alice has a cat named Catson".split(" ")).parallelStream()
+        final List<String> result = Arrays.asList("Alice has a cat named Catson".split(" "))
+                .parallelStream()
                 .sorted()
                 .map(String::toUpperCase)
                 .collect(Collectors.toList());
-
+        System.out.println(result);
     }
 }
 
