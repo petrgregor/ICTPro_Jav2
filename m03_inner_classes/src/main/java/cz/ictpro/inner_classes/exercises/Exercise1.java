@@ -8,8 +8,8 @@ public class Exercise1 {
         UserValidator userValidator = new UserValidator();
         String[] results = userValidator.validateEmails("pb@",
                 "@yahoo.com");
-        System.out.println(results[0]);
-        System.out.println(results[1]);
+        System.out.println(results[0]); // unknown
+        System.out.println(results[1]); // unknown
     }
 }
 class UserValidator {

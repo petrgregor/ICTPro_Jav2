@@ -4,10 +4,10 @@ import java.util.Optional;
 
 public class OptionalsPresenceExample {
     public static void main(String[] args) {
-        final Optional<String> optional = getStringForEvenNumber(6);
+        final Optional<String> optional = getStringForEvenNumber(4);
         if (optional.isPresent()) {
             System.out.println("I am optional with a value, I am non empty box");
-        } else if (optional.isEmpty()) {
+        } else /*if (optional.isEmpty())*/ {
             System.out.println("I am an empty optional");
         }
 

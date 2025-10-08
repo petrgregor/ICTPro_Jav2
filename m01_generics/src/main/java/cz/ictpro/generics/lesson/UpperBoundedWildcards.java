@@ -11,4 +11,12 @@ public class UpperBoundedWildcards {
         }
         return sum;
     }
+
+    public static void main(String[] args) {
+        List<Integer> values = List.of(1, 2, 3);
+        System.out.println(sum(values));
+
+        List<Double> doubles = List.of(1.5, 3.7, 15.8);
+        System.out.println(sum(doubles));
+    }
 }

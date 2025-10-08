@@ -29,3 +29,8 @@ public class Pair<K, V> {
     }
 }
 
+
+/*
+public class IntKeyPair<V> extends Pair<Integer, V> {
+
+}*/

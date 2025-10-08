@@ -19,7 +19,7 @@ public class LinkedHashMapExample {
         }
 
         for (final Map.Entry<Integer, String> ageToName : ageToNames.entrySet()) { // iteration over pairs with entrySet()
-            System.out.println("Value for key  " + ageToName.getKey() + " is " + ageToName.getValue());
+            System.out.println("Value for key " + ageToName.getKey() + " is " + ageToName.getValue());
           /* the result will always be the following 3 lines, in this exact order (results from the use of LinkedHashMap)
              Value for key 20 is Maggie
              Value for key 40 is Kate

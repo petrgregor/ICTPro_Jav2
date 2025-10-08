@@ -13,6 +13,10 @@ public class Exercise3 {
         Integer[] tab = {10, 21, 33, 40, 50, 60};
         ArrayUtils.swap(tab, 2, 5);
         System.out.println(Arrays.toString(tab));
+
+        String[] strings = {"Hello", "my", "beautiful", "World"};
+        ArrayUtils.swap(strings, 1, 2);
+        System.out.println(strings[1] + " " + strings[2]);
     }
 }
 

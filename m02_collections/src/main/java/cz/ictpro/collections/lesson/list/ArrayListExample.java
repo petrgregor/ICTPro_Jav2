@@ -8,6 +8,7 @@ public class ArrayListExample {
         final List<String> names = new ArrayList<>();
         names.add("Andrew");  // adding an item to the end of the list
         names.add("Gregory"); // adding an item to the end of the list
+        names.add("Andrew");
         for (final String name: names) {
             System.out.println(name); // Andrew, Gregory will be displayed on the screen, keeping the order
         }

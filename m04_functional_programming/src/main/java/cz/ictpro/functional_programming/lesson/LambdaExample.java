@@ -10,9 +10,7 @@ public class LambdaExample {
         });
         thread1.start();
 
-        Thread thread2 = new Thread(() -> {
-            System.out.println("Runnable example using lambda!");
-        });
+        Thread thread2 = new Thread(() -> System.out.println("Runnable example using lambda!"));
         thread2.start();
 
     }

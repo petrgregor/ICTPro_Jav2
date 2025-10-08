@@ -24,6 +24,10 @@ public class Main {
         numberBox2.setItem(30);
         System.out.println(numberBox2.getItem());
 
+        Box<String> stringBox = new Box<>();
+        stringBox.setItem("Hello");
+        System.out.println(stringBox.getItem());
+
         Pair<String, Float> pair = new Pair<String, Float>();
         pair.setKey("Hello");
         pair.setValue(13.0F);
@@ -38,6 +42,8 @@ public class Main {
         System.out.println(firstPair);
         Pair<Long, String> secondPair = PairGenerator.<Long, String>generatePair(2L, "value2");
         System.out.println(secondPair);
+        Pair<String, String> thirdPair = PairGenerator.generatePair("Hello", "World");
+        System.out.println(thirdPair);
 
         NumberBox<Double> doubleBox = new NumberBox<>();
         doubleBox.setValue(3.3);
@@ -45,11 +51,20 @@ public class Main {
         intBox.setValue(10);
         System.out.println(intBox.getValue() + " " + doubleBox.getValue());
 
+        //NumberBox<String> stringBox2 = new NumberBox<String>();
+        /*
+        * error: type argument String is not within bounds of type-variable T
+        NumberBox<String> stringBox2 = new NumberBox<String>();
+                  ^
+  where T is a type-variable:
+    T extends Number declared in class NumberBox
+        * */
+
         //NumberBox<String> stringBox = new NumberBox<String>();
 
         List<Integer> values = List.of(1, 2, 3);
         System.out.println(UpperBoundedWildcards.sum(values));
-
+        //*/
         //LowerBoundedWildcards.addNumbers(List.of(1, 2, 3));
         //LowerBoundedWildcards.addNumbers(List.of(new Object(), new Object(), new Object()));
     }

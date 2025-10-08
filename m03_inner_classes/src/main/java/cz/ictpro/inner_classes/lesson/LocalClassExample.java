@@ -31,13 +31,13 @@ public class LocalClassExample {
         // The example below shows the limits of local classes:
         class InnerClassExample {
             private static final String APP_NAME = "DummyApp"; // OK
-            private static String INCORRECT_FIELD = "IAmMissingFinal"; // Compilation error, no final modifier
+            //private static String INCORRECT_FIELD = "IAmMissingFinal"; // Compilation error, no final modifier
 
             public void printAppName() {
                 System.out.println(APP_NAME);
             }
 
-            public static void shouldNotBeDeclaredHere() {} // Compile error, static method in local class
+            //public static void shouldNotBeDeclaredHere() {} // Compile error, static method in local class
         }
 
         final InnerClassExample innerClassExample = new InnerClassExample();

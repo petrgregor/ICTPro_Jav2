@@ -11,8 +11,8 @@ public class FunctionExample {
         that returns the value of the name field in the Employee object.
         Since this lambda consists of one expression, we don't have to write the return keyword.
          */
-        Function<Employee, String> employeeToString = (employee) -> employee.getName();
-        //Function<Employee, String> employeeToString = Employee::getName;
+        //Function<Employee, String> employeeToString = (employee) -> employee.getName();
+        Function<Employee, String> employeeToString = Employee::getName;
 
         List<Employee> employees = Arrays.asList(new Employee("Adam"), new Employee("Bronislav"));
         showEmployee(employees, employeeToString);
